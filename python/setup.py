@@ -24,6 +24,9 @@ setup(
         'Topic :: Multimedia :: Graphics',
         'Topic :: Software Development :: Libraries',
     ],
+    packages=['zbar_py'],
+    package_dir={'zbar_py': 'src/zbar_py'},
+    ext_package='zbar_py',
     ext_modules = [
         Extension('zbar', [
                 'zbarmodule.c',
